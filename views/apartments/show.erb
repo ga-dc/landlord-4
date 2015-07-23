@@ -1,1 +1,12 @@
-This is info about apartment #3.
+  <h2>
+    <%= @apartment.address %><a href="/apartments/<%= @apartment.id %>/edit"> (edit)</a>
+  </h2>
+  <p>
+    Rent: <%= @apartment.monthly_rent %>
+  </p>
+  <h4>Tenants:</h4>
+    <% @apartment.tenants.each do |tenant| %>
+      <ul>
+        <li><a href="/tenants/<%= tenant.id %>"><%= tenant.name %></a></li>
+      </ul>
+    <% end %>

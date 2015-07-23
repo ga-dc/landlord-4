@@ -46,3 +46,7 @@ Tenant.last.update(age: 25)
 
 # delete an object
 Tenant.last.destroy
+
+#binding.pry
+
+puts "seeded database"
