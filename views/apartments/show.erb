@@ -6,12 +6,10 @@
   <li>Number of Beds: <%= @apartment.num_beds %></li>
   <li>Number of Baths: <%= @apartment.num_baths %></li>
   <li>Monthly Rent: $<%= @apartment.monthly_rent %></li>
-  <li>Tenants:
+  <li><a href="/apartments/<%= @apartment.id %>/tenants">Tenants:</a>
     <ul>
       <% @apartment.tenants.each do |tenant| %>
-        <li>
-          <a href='/tenants/<%= tenant.id %>'><%= tenant.name %></a>
-        </li>
+        <li><%= tenant.name %></li>
       <% end %>
     </ul>
   </li>

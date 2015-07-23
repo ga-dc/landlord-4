@@ -1,1 +1,8 @@
-Listing tenants for apartment #3
+<h2>Tenants at <%= @apartment.address %></h2>
+  <% @apartment.tenants.each do |tenant| %>
+    <ul>
+        <li>Name: <%= tenant.name %></a></li>
+        <li>Age: <%= tenant.age %></a></li>
+        <li>Gender: <%= tenant.gender %></a></li>
+    </ul>
+  <% end %>
