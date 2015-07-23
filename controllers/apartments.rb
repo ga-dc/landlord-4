@@ -12,3 +12,8 @@ end
 get '/apartments/:id' do
   erb :"apartments/show"
 end
+
+post '/apartments' do
+  @apartment = Apartment.create(params[:apartment])
+  redirect "/apartments/#{@apartment.id}"
+end
