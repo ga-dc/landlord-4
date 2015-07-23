@@ -29,6 +29,7 @@ third_street_apt.tenants.create([
   {name: "lindsay", age: 24, gender: "f"},
   {name: "haleigh", age: 37, gender: "f"}
   ])
+  
 # query for all objects of the Tenant class, store it in a variable
 all_tenants = Tenant.all
 
