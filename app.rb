@@ -1,7 +1,7 @@
 require 'bundler/setup'
 require 'sinatra'
 require 'sinatra/reloader'
-
+require 'pry'
 # Load specific routes
 require_relative 'db/connection.rb'
 require_relative 'controllers/welcome'

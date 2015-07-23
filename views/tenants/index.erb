@@ -1,8 +1,11 @@
 <h2>Tenants at <%= @apartment.address %></h2>
-  <% @apartment.tenants.each do |tenant| %>
-    <ul>
-        <li>Name: <%= tenant.name %></a></li>
-        <li>Age: <%= tenant.age %></a></li>
-        <li>Gender: <%= tenant.gender %></a></li>
-    </ul>
-  <% end %>
+<% @apartment.tenants.each do |tenant| %>
+  <ul>
+      <li>Name: <%= tenant.name %></a></li>
+      <li>Age: <%= tenant.age %></a></li>
+      <li>Gender: <%= tenant.gender %></a></li>
+  </ul>
+<% end %>
+<ul>
+  <li><a href="/apartments/<%= @apartment.id %>/tenants/new">Add a Tenant</a></li>
+</ul>
