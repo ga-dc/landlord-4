@@ -1,6 +1,7 @@
 # index
 get '/apartments' do
-  erb :"apartments/index"
+    @apartments = Apartment.all
+    erb :"apartments/index"
 end
 
 # new
@@ -8,7 +9,19 @@ get '/apartments/new' do
   erb :"apartments/new"
 end
 
+post '/apartments' do
+
+    Apartment.create(params[:apartment])
+    redirect "/apartments"
+end
+
 # show
 get '/apartments/:id' do
-  erb :"apartments/show"
+    @apartment = Apartment.find(params[:id])
+    erb :"apartments/show"
 end
+
+#update
+
+
+#delete

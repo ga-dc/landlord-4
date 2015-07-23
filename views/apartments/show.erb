@@ -1,1 +1,19 @@
-This is info about apartment #3.
+<h2><%=@apartment.address%> (edit)</h2>
+
+<ul>
+    <li>
+        Monthly rent: <%=@apartment.monthly_rent%>
+    </li>
+    <li>
+        Square feet: <%=@apartment.sqft%>
+    </li>
+    <li>
+        No. of beds: <%=@apartment.num_beds%>
+    </li>
+    <li>
+        No. of baths: <%=@apartment.num_baths%>
+    </li>
+    <li>
+        Current tenants: <%=@apartment.tenants%> (add tenant)
+    </li>
+</ul>
