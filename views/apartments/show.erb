@@ -5,6 +5,7 @@
   <li>Sqft: <%= @apartment.sqft %></li>
   <li>Number of Beds: <%= @apartment.num_beds %></li>
   <li>Number of Baths: <%= @apartment.num_baths %></li>
+  <li>Monthly Rent: $<%= @apartment.monthly_rent %></li>
   <li>Tenants:
     <ul>
       <% @apartment.tenants.each do |tenant| %>
