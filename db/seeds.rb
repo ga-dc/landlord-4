@@ -15,19 +15,19 @@ third_street_apt  = Apartment.create(address: "3412 3rd St", monthly_rent: 1000,
 
 # create at least 9 objects(at least 5 must be long to an apartment)
 first_street_apt.tenants.create([
-  {name: "sam", age: 24, gender: "f"},
-  {name: "tom", age: 26, gender: "m"},
-  {name: "jerry", age: 32, gender: "m"}
+  {name: "Sam", age: 24, gender: "f"},
+  {name: "Tom", age: 26, gender: "m"},
+  {name: "Jerry", age: 32, gender: "m"}
   ])
 second_street_apt.tenants.create([
-  {name: "megan", age: 52, gender: "f"},
-  {name: "mary", age: 44, gender: "f"},
-  {name: "shamus", age: 28, gender: "m"}
+  {name: "Megan", age: 52, gender: "f"},
+  {name: "Mary", age: 44, gender: "f"},
+  {name: "Shamus", age: 28, gender: "m"}
   ])
 third_street_apt.tenants.create([
-  {name: "eltahir", age: 32, gender: "m"},
-  {name: "lindsay", age: 24, gender: "f"},
-  {name: "haleigh", age: 37, gender: "f"}
+  {name: "Eltahir", age: 32, gender: "m"},
+  {name: "Lindsay", age: 24, gender: "f"},
+  {name: "Haleigh", age: 37, gender: "f"}
   ])
 # query for all objects of the Tenant class, store it in a variable
 all_tenants = Tenant.all
