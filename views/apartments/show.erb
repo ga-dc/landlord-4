@@ -1,1 +1,10 @@
-This is info about apartment #3.
+<h2>Apartment Details</h2>
+
+<ul>
+  <li>Address: <%= @apartment.address %></li>
+  <li>Sqft: <%= @apartment.sqft %></li>
+  <li>Number of Beds: <%= @apartment.num_beds %></li>
+  <li>Number of Baths: <%= @apartment.num_baths %></li>
+  <li>Monthly Rent: $<%= @apartment.monthly_rent %></li>
+  <li><a href="/apartments/<%= @apartment.id %>/tenants">View <%= @apartment.tenants.count%> Tenants</a></li>
+</ul>
