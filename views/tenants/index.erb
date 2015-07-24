@@ -1,1 +1,9 @@
-Listing tenants for apartment #3
+<h2>Tenants of <%= @apartment.address%></h2>
+<ul>
+<%@apartment.tenants.order(name: :desc).each do |tenant|%>
+  <li><%= tenant.name %></li>
+<%end%>
+</ul>
+<p>
+  <a href='/apartments/<%= @apartment.id %>/tenants/new'>Add tenant to apartment</a>
+</p>
