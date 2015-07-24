@@ -1,0 +1,6 @@
+<h2>Apartment Listings</h2>
+
+<ul>
+<% @apartments.each do |apartment| %>
+  <li><%= apartment.address %></li>
+<% end %>
