@@ -5,6 +5,11 @@ body{
   padding:1em;
 }
 
+section {
+  position: relative;
+  clear: both;
+}
+
 nav{
   margin-bottom:2em;
 }
