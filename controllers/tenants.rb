@@ -22,9 +22,21 @@ get "/tenants/:id" do
 end
 
 #edit route
-
+get "/tenants/:id/edit" do
+  @tenant = Tenant.find(params[:id])
+  erb :"tenants/edit"
+end
 
 #update route
-
+put "/tenants/:id" do
+  @tenant = Tenant.find(params[:id])
+  @tenant.update(params[:tenant])
+  redirect "/tenants/#{@tenant.id}"
+end
 
 #destroy route
+delete "/tenants/:id" do
+  @tenant = Tenant.find(params[:id])
+  @tenant.destroy
+  redirect "/tenants"
+end
