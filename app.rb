@@ -10,7 +10,6 @@ require_relative 'controllers/tenants'
 
 # db
 require_relative 'db/connection'
-# require_relative 'db/schema'
 require_relative 'db/seeds'
 
 # models
