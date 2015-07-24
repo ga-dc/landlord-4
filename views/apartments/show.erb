@@ -1,1 +1,7 @@
-This is info about apartment #3.
+<h1>Apartment</h1>
+  <h2><%= @apartment.address %> <a href="/apartments/<%= @apartment.id"%>/edit">(edit)</a></h2>
+
+    <h3><%= @apartment.monthly_rent %>
+    <h3><%= @apartment.sqft %>
+    <h3><%= @apartment.num_beds %>
+    <h3><%= @apartment.num_baths %>

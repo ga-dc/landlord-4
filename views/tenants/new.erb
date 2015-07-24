@@ -1,1 +1,18 @@
-form for adding a new tenant
+<h2>New Tenant</h2>
+
+
+<form action="/tenants" method="post">
+  <label for="tenant[name]">Name:</label>
+  <input name="tenant[name]">
+
+  <label for="tenant[age]">Age:</label>
+  <input name="tenant[age]">
+
+  <label for="tenant[gender]">Gender:</label>
+  <input name="tenant[gender]">
+
+  <label for="tenant[apartment_id]">Apartment ID:</label>
+  <input name="tenant[apartment_id]">
+
+  <input type="submit" value="Create">
+</form>
