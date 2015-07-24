@@ -1,8 +1,10 @@
+<h3> Add New Apartments </h3>
+
 <form method="post" action="/apartments">
-  <input type="text" placeholder="Address">
-  <input type="text" placeholder="Monthly Rent">
-  <input type="text" placeholder="Square Feet">
-  <input type="text" placeholder="Number Beds">
-  <input type="text" placeholder="Number Baths">
+  <input type="text" placeholder="Address" name="apartment[address]">
+  <input type="text" placeholder="Monthly Rent" name="apartment[monthly_rent]">
+  <input type="text" placeholder="Square Feet" name="apartment[sqft]">
+  <input type="text" placeholder="Number Beds" name="num_beds">
+  <input type="text" placeholder="Number Baths" name="num_baths">
   <input type="submit">
 </form>
