@@ -8,6 +8,7 @@ require_relative '../models/tenant'
 
 Apartment.destroy_all
 Tenant.destroy_all
+
 # create at least 3 objects of the apartment class
 first_street_apt  = Apartment.create(address: "1234 1st St", monthly_rent: 800,  sqft: 1100, num_beds: 1, num_baths: 1)
 second_street_apt = Apartment.create(address: "2341 2nd St", monthly_rent: 900,  sqft: 1200, num_beds: 2, num_baths: 2)
@@ -29,6 +30,7 @@ third_street_apt.tenants.create([
   {name: "lindsay", age: 24, gender: "f"},
   {name: "haleigh", age: 37, gender: "f"}
   ])
+
 # query for all objects of the Tenant class, store it in a variable
 all_tenants = Tenant.all
 
