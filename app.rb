@@ -1,7 +1,12 @@
 require 'bundler/setup'
 require 'sinatra'
 require 'sinatra/reloader'
+require 'active_record'
+require_relative 'db/connection.rb'
+require_relative 'db/seeds.rb'
 
+require_relative 'models/apartment'
+require_relative 'models/tenant'
 # Load specific routes
 require_relative 'controllers/welcome'
 require_relative 'controllers/apartments'
