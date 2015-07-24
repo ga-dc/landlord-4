@@ -1,4 +1,4 @@
-<h2><%=@apartment.address%> (edit)</h2>
+<h2><%=@apartment.address%> <a href="/apartments/<%= @apartment.id %>/edit">(edit)</a></h2>
 
 <ul>
     <li>
@@ -15,7 +15,7 @@
     </li>
     <li>
         Current tenants: <% @apartment.tenants.each do |tenant|%>
-                        <%= tenant.name %>
+                        <a href="/apartments/<%= @apartment.id %>/tenants/<%= tenant.id %>"><%= tenant.name %></a>
                         <% end %>
          <a href="/apartments/tenants/new">(add tenant)</a>
     </li>

@@ -6,8 +6,13 @@ get '/apartments/:id/tenants' do
 end
 
 # show
+get '/apartments/:id/tenants/:id' do
+    @tenant = Tenant.find(params[:id])
+    @apartment = Apartment.where(params["id: @tenant.apartment_id"])
+    erb :"tenants/show"
+end
 
-
+#new
 get '/apartments/tenants/new' do
     erb :"tenants/new"
 end
