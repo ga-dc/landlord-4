@@ -3,7 +3,7 @@ require 'active_record'
 
 ActiveRecord::Base.establish_connection(
   :adapter => "postgresql",
-  :database => "landlord"
+  :database => "landlord-2"
 )
 
 if defined?(Sinatra)
