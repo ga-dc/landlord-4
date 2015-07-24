@@ -1,6 +1,7 @@
 require 'bundler/setup'
 require 'sinatra'
 require 'sinatra/reloader'
+require 'pry'
 
 # Load specific routes
 require_relative 'db/connection'
@@ -16,3 +17,7 @@ require_relative 'models/tenant'
 get "/" do
   erb :welcome
 end
+
+# binding.pry
+#
+# puts "not an error"
