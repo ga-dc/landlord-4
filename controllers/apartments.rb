@@ -1,17 +1,23 @@
-# index
+# index route
 get '/apartments' do
 	@apartments = Apartment.all
   erb :"apartments/index"
 end
 
-# new
+# new route
 get '/apartments/new' do
   erb :"apartments/new"
 end
 
-# show
+# show route
 get '/apartments/:id' do
 	@apartment = Apartment.find(params[:id])
 	@tenants = Tenant.where(apartment_id: @apartment[:id])
   erb :"apartments/show"
+end
+
+# create route
+post "/apartments" do
+	new_apartment = Apartment.create(params[:apartment])
+	redirect "/apartment/#{new_apartment.id}"
 end

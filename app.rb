@@ -6,6 +6,10 @@ require 'active_record'
 # Load DB
 require_relative 'db/connection'
 
+# Load models
+require_relative 'models/apartment'
+require_relative 'models/tenant'
+
 # Load specific routes
 require_relative 'controllers/welcome'
 require_relative 'controllers/apartments'
