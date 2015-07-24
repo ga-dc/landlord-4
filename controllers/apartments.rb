@@ -1,6 +1,7 @@
 # index
 get '/apartments' do
-  erb :"apartments/index"
+  @apartments = Apartment.all
+  erb(:"apartments/index")
 end
 
 # new
