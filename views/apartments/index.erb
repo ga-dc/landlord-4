@@ -2,5 +2,9 @@
 
 <ul>
 <% @apartments.each do |apartment| %>
-  <li><%= apartment.address %></li>
+  <li>
+    <a href="/apartments/<%= apartment.id %>">
+      <%= apartment.address %>
+    </a>
+  </li>
 <% end %>
