@@ -1,5 +1,6 @@
 body{
   font-family:"Helvetica Neue";
+  color: #222;
   margin:auto;
   max-width:40em;
   padding:1em;
@@ -17,4 +18,32 @@ input[type="text"]{
   display:block;
   font:inherit;
   margin-bottom:.5em;
+}
+
+h2{
+  font-family: "Helvetica Neue", 'Helvetica', sans-serif;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 2em;
+}
+
+ul {
+   margin: 1.5em 0em;
+   max-width: 25%;
+}
+
+.apartment_feature {
+   border-bottom: 1px solid #ccc;
+   padding: .2em 0 .2em 0em;
+   font-weight: bold;
+   color: #666;
+}
+.apartment_feature:hover {
+   cursor: pointer;
+   background-color: #f2f2f2;
+   color: #000;
+}
+
+.edit{
+  text-align: center;
 }

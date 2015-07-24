@@ -1,1 +1,8 @@
-form for adding a new tenant
+<h3> Create a new Tenant:</h3>
+
+<form method="post" action="/apartments/<%= apartment.id %>/tenants">
+  <input name="tenant[name]" type="text" placeholder="Address">
+  <input name="tenant[age]" type="text" placeholder="Monthly Rent">
+  <input name="tenant[gender]" type="text" placeholder="Square Feet">
+  <input type="submit">
+</form>
