@@ -1,1 +1,8 @@
-Listing tenants for apartment #3
+<p>The tenants that live <%= @apartment.address %> are:</p>
+<ul>
+  <% @tenants.each do | tenant| %>
+  <li>
+    <%= tenant.name%>
+  </li>
+  <% end %>
+</ul>
