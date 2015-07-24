@@ -1,0 +1,9 @@
+<form method="post" action="/apartments/<%= @apartment.id %>">
+  <input type="hidden" name="_method" value="put">
+  <input value="<%= @apartment.address %>" name="apartment[address]"       type="text" placeholder="Address">
+  <input value="<%= @apartment.monthly_rent %>" name="apartment[monthly_rent]"  type="text" placeholder="Monthly Rent">
+  <input value="<%= @apartment.sqft %>" name="apartment[sqft]"          type="text" placeholder="Square Feet">
+  <input value="<%= @apartment.photo_url %>" name="apartment[num_beds]"      type="text" placeholder="Number Beds">
+  <input value="<%= @apartment.nationality %>" name="apartment[num_baths]"     type="text" placeholder="Number Baths">
+  <input type="submit">
+</form>
