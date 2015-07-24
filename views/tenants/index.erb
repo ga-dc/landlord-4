@@ -1,1 +1,13 @@
-Listing tenants for apartment #3
+<h2>
+  Tenants
+  <a href="/tenants/new">(+)</a>
+</h2>
+
+<ul>
+  <% @tenants.each do |tenant| %>
+    <li>
+      <a href="/tenants/<%= tenant.id %>">
+        <%= tenant.name %></li>
+      </a>
+  <% end %>
+</ul>
