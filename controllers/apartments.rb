@@ -18,5 +18,14 @@ end
 #show route
 get "/apartments/:id" do
   @apartment = Apartment.find(params[:id])
+  @tenants = Tenant.where(apartment_id: params[:id])
   erb :"apartments/show"
 end
+
+#edit route
+
+
+#update route
+
+
+#destroy route
