@@ -1,6 +1,7 @@
 # don't forget to load dependencies!
 require 'bundler/setup'
 require 'pry'
+require 'pg'
 
 require_relative '../db/connection.rb'
 require_relative '../models/apartment'
