@@ -18,3 +18,7 @@ input[type="text"]{
   font:inherit;
   margin-bottom:.5em;
 }
+
+input[type="submit"]{
+  margin-top: 1.5em
+}
