@@ -1,0 +1,10 @@
+<h2>Tenants of Springfield, Everywhere <a href="/tenants/new">Add</a></h2>
+<ul>
+<% @tenants.each do |tenant| %>
+  <li>
+    <a href="/tenants/<%= tenant.id %>">
+      <%= tenant.name %>
+    </a>
+  </li>
+<% end %>
+</ul>
