@@ -1,4 +1,5 @@
 # don't forget to load dependencies!
+require 'pg'
 require 'bundler/setup'
 require 'pry'
 
