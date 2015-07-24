@@ -1,6 +1,6 @@
 Listing tenants for apartment at <%= @apartment.address %>
 <ul>
-<li><a href="/apartments/<%= @apartment.id %>/tenant/new">Create New Tenant</a></li>
+<li><a href="/apartments/<%= @apartment.id %>/tenants/new">Create New Tenant</a></li>
 <%@tenants.each do |tenant| %>
 <li> <%= tenant.name %></li>
   <% end %>
