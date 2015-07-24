@@ -14,6 +14,9 @@
         No. of baths: <%=@apartment.num_baths%>
     </li>
     <li>
-        Current tenants: <%=@apartment.tenants%> (add tenant)
+        Current tenants: <% @apartment.tenants.each do |tenant|%>
+                        <%= tenant.name %>
+                        <% end %>
+         <a href="/apartments/tenants/new">(add tenant)</a>
     </li>
 </ul>
