@@ -1,6 +1,7 @@
 DROP TABLE IF EXISTS tenants;
 DROP TABLE IF EXISTS apartments;
 
+
 CREATE TABLE tenants (
   id SERIAL PRIMARY KEY,
   name TEXT,
