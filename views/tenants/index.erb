@@ -1,1 +1,5 @@
-Listing tenants for apartment #3
+<ul>
+<% @tenants.each do |tenant| %>
+  <li>Name: <%= tenant.name %>, <%= tenant.age %>, <%= tenant.gender %></li>
+<% end %>
+</ul>
