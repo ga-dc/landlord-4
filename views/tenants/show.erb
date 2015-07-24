@@ -1,0 +1,6 @@
+<h2>
+  <%= @tenant.name.capitalize %><a href="/tenants/<%= @tenant.id %>/edit"> (edit)</a>
+</h2>
+<p>Age: <%= @tenant.age %></p>
+<p>Gender: <%= @tenant.gender %></p>
+<p>Apartment: <%= @tenant.apartment.address %></p>

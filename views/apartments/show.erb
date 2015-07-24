@@ -1,12 +1,14 @@
   <h2>
     <%= @apartment.address %><a href="/apartments/<%= @apartment.id %>/edit"> (edit)</a>
   </h2>
-  <p>
-    Rent: <%= @apartment.monthly_rent %>
-  </p>
+  <p>Rent: <%= @apartment.monthly_rent %></p>
+  <p>Square Feet: <%= @apartment.sqft %></p>
+  <p>Number of Beds: <%= @apartment.num_beds %></p>
+  <p>Number of Baths: <%= @apartment.num_baths %></p>  
+
   <h4>Tenants:</h4>
     <% @apartment.tenants.each do |tenant| %>
       <ul>
-        <li><a href="/tenants/<%= tenant.id %>"><%= tenant.name %></a></li>
+        <li><a href="/tenants/<%= tenant.id %>"><%= tenant.name.capitalize %></a></li>
       </ul>
     <% end %>
