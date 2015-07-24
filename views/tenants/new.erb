@@ -1,1 +1,8 @@
-form for adding a new tenant
+<h3>Create New Tenant</h3>
+<form method="post" action="/apartments/<%= @apartment.id %>/tenants">
+  <input name="tenant[apartment_id]" type="hidden" value="<%= @apartment.id %>">
+  <input type="text" placeholder="Name" name="apartment[name]">
+  <input type="text" placeholder="Age" name="apartment[age]">
+  <input type="text" placeholder="Gender" name="apartment[gender]">
+  <input type="submit">
+</form>
