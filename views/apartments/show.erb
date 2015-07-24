@@ -1,1 +1,24 @@
-This is info about apartment #3.
+<!-- This is info about apartment #3. -->
+<h2>
+  <%= @apartment %>
+</h2>
+  <p>
+    <label>Address</label>
+    <%= @apartment.address %>
+  </p>
+  <p>
+    <label>Monthly Rent</label>
+    <%= @apartment.rent %>
+  </p>
+  <p>
+    <label>Square Footage</label>
+    <%= @apartment.sqft %>
+  </p>
+  <p>
+    <label>Number of Bedrooms</label>
+    <%= @apartment.num_beds %>
+  </p>
+  <p>
+    <label>Number of Bathrooms</label>
+    <%= @apartment.num_baths %>
+  </p>
