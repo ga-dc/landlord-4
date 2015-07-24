@@ -1,1 +1,14 @@
-form for adding a new tenant
+<h2>Adding Tenant to this Apartment</h2>
+
+<form method="post" action="/apartments/<%= @apartment.id %>/tenants">
+  <label for="tenant[:name]">Name</label>
+  <input name="apartment[:name]" type="text">
+
+  <label for="apartment[:age]">Age</label>
+  <input name="apartment[:age]" type="text">
+
+  <label for="apartment[:gender]">Gender</label>
+  <input name="apartment[:gender]" type="text">
+
+  <input type="submit">
+</form>
