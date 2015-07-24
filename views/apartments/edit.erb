@@ -1,0 +1,10 @@
+<h2>Edit Apartment</h2>
+
+<form method="post" action="/apartments/create">
+  <input type="text" placeholder="Address" value="<%= @apartment.address %>">
+  <input type="text" placeholder="Monthly Rent" value="<%= @apartment.monthly_rent %>">
+  <input type="text" placeholder="Square Feet" value="<%= @apartment.sqft %>">
+  <input type="text" placeholder="Number Beds" value="<%= @apartment.num_beds %>">
+  <input type="text" placeholder="Number Baths" value="<%= @apartment.num_baths %>">
+  <input type="submit" value="Create">
+</form>

@@ -1,1 +1,16 @@
 <h1>Welcome to Landlord 4.0</h1>
+
+# ======= index
+<h2>Available Apartments<a href="/apartments/new">()</a></h2>
+<a href="/apartments/new">(+)</a>
+
+<ul>
+  <% @apartments.each do |apartment| %>
+    <li><p><a href="/apartments/<%= apartment.id %>"><%= apartment.address %> --
+      <a href="/apartments/<%= apartment.id %>/edit">edit</a></p>
+    </li>
+  <% end %>
+</ul>
+
+# ======= new
+<h2><a href="/apartments/new">Add new apartment</a></h2>
