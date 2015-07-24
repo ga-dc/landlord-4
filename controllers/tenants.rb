@@ -12,6 +12,6 @@ end
 
 post '/apartments/:id/tenants' do
   @apartment = Apartment.find(params[:id])
-  apartment.tenant.creates(params[:id])
+  apartment.tenants.create(params[:tenant])
   redirect "/apartments/#{@apartment.id}/tenants"
 end
