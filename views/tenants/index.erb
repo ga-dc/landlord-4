@@ -1,1 +1,9 @@
-Listing tenants for apartment #3
+<!-- Listing tenants for apartment #3 -->
+<h2>Tenants</h2>
+<ul>
+  <% @tenants.each do |tenant| %>
+    <li>
+      <%= tenant %>
+    </li>
+  <% end %>
+</ul>
