@@ -1,6 +1,6 @@
 # index
 get '/apartments/:id/tenants' do
-  @tenants = Tenant.all
+  @tenants = Tenant.find(params[3])
   erb :"tenants/index"
 end
 
