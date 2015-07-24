@@ -1,1 +1,7 @@
-Listing tenants for apartment #3
+Listing tenants for apartment at <%= @apartment.address %>
+<ul>
+<li><a href="/apartments/<%= @apartment.id %>/tenants/new">Create New Tenant</a></li>
+<%@tenants.each do |tenant| %>
+<li> <%= tenant.name %></li>
+  <% end %>
+</ul>

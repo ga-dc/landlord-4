@@ -29,20 +29,3 @@ third_street_apt.tenants.create([
   {name: "lindsay", age: 24, gender: "f"},
   {name: "haleigh", age: 37, gender: "f"}
   ])
-# query for all objects of the Tenant class, store it in a variable
-all_tenants = Tenant.all
-
-# query for all instances of the Tenant class that belong to the first Apartment you created
-first_street_apt.tenants
-
-# update any one of your objects you've created using attribute helper methods
-first_street_apt.monthly_rent = 840
-
-# save that object you just updated to the database
-first_street_apt.save!
-
-# update an object using the update method
-Tenant.last.update(age: 25)
-
-# delete an object
-Tenant.last.destroy
