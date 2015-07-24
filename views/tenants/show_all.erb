@@ -1,0 +1,7 @@
+<h2>Current tenants of <%= @apartment.address %>:</h2>
+
+<ul>
+  <% @tenants.each do |tenant| %>
+    <li><a href='/apartments/<%= apartment.id%>/tenants/<%= tenant.id %>'><%= tenant.name%></a></li>
+  <% end %>
+</ul>

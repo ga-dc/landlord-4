@@ -1,1 +1,33 @@
-This is info about apartment #3.
+<h2> Apartment <%= @apartment.id %> </h2>
+<p class="edit">
+  <a href="/apartments/<%= @apartment.id %>/edit">[edit listing]</a>
+</p>
+
+<h3> Located at <%= @apartment.address %> </h3>
+
+<h4>Specifications:</h4>
+<ul>
+  <li class="apartment_feature">Rent: $<%= @apartment.monthly_rent %>/mo</li>
+  <li class="apartment_feature">Footage: <%= @apartment.sqft %> ft&sup2;</li>
+  <li class="apartment_feature"># of Beds: $<%= @apartment.num_beds %>/mo</li>
+  <li class="apartment_feature"># of Baths: $<%= @apartment.num_baths %>/mo</li>
+  <li><a href="/apartments/<%= @apartment.id %>/tenants">Tenants of this Apartment</li>
+</ul>
+
+<% location = @apartment.address.sub(" ", "+") %>
+<% location = location.sub(" ", "+") %>
+<% location = location.sub(" ", "+") %>
+<% location = location.sub(" ", "+") %>
+
+
+<iframe
+  width="600"
+  height="450"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDZc6QZp5ScEv-8ZCKkD8o0rRuZp9t6tfY&q=<%= location %>, Baltimore MD" allowfullscreen>
+</iframe>
+
+<form method="post" action="/apartments/<%= @apartment.id %>">
+  <input name="_method" value="delete" type="hidden">
+  <input type="submit" value="Delete Record">
+</form>
