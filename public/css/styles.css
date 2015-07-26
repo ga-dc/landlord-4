@@ -18,3 +18,14 @@ input[type="text"]{
   font:inherit;
   margin-bottom:.5em;
 }
+
+h1{
+  text-align: center;
+}
+.apartment-address {
+  text-align: center;
+}
+
+h4{
+  margin: 5px;
+}
