@@ -1,4 +1,4 @@
-# Landlord Part 4
+# Landlord - Sinatra App
 
 **Please time box this assignment to 2 hours**
 
