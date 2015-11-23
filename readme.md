@@ -1,5 +1,7 @@
 # Landlord Part 4
 
+**Please time box this assignment to 2 hours**
+
 ## Part 4 - Connect Sinatra to the Database
 
 In your main app.rb file, create instance variables that query the Database using active record.
