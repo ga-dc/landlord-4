@@ -1,1 +1,8 @@
 form for adding a new tenant
+<form method="post" action="/apartments/:id/tenants">
+  <input type="text" placeholder="name" name ="tenant[name]">
+  <input type="text" placeholder="age"  name ="tenant[age]">
+  <input type="text" placeholder="gender" name ="tenant[gender]">
+  <input type="integer" placeholder ="apartment to move to" name ="tenant[apartment_id]">
+  <input type="submit">
+</form>
