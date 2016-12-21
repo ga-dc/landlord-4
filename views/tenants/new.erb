@@ -1,1 +1,8 @@
-form for adding a new tenant
+<h2>Add New Tenent for <%= @apartment.id %></h2>
+
+<form method="put" action="/tenents/create">
+  <input type="text" name="name" placeholder="name">
+  <input type="text" name="age" placeholder="age">
+  <input type="text" name="gender" placeholder="gender>
+  <input type="submit" value="Create">
+</form>

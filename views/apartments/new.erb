@@ -1,8 +1,10 @@
-<form method="post" action="/apartments">
-  <input type="text" placeholder="Address">
-  <input type="text" placeholder="Monthly Rent">
-  <input type="text" placeholder="Square Feet">
-  <input type="text" placeholder="Number Beds">
-  <input type="text" placeholder="Number Baths">
-  <input type="submit">
+<h2>New Apartment</h2>
+
+<form method="post" action="/apartments/create">
+  <input type="text" name="address" placeholder="Address">
+  <input type="text" name="monthly_rent" placeholder="Monthly Rent">
+  <input type="text" name="sqft" placeholder="Square Feet">
+  <input type="text" name="num_beds" placeholder="Number Beds">
+  <input type="text" name="num_baths" placeholder="Number Baths">
+  <input type="submit" value="Create">
 </form>

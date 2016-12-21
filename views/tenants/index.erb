@@ -1,1 +1,14 @@
-Listing tenants for apartment #3
+<h2>Current Tenents for <%= @apartment.address %></h2>
+
+<ul>
+  <% @tenents.each do |tenent| %>
+    <li><p>
+      <a href="/tenents/<%= tenent.id %>/show"><%= tenent.name %> info</a> |
+      <a href="/tenents/<%= tenent.id %>/delete"><%= tenent.name %> delete</a></p>
+    </li>
+  <% end %>
+</ul>
+
+
+<h2>Add a New Tenent</h2>
+<h2><a href="/apartments/<%= @apartment.id %>/tenent/new">Add tenent for this apartment</a></h2>

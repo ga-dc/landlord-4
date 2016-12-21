@@ -1,0 +1,8 @@
+<h2>Edit Tenent</h2>
+
+<form method="put" action="/tenents/<%= @tenent.id %>/update">
+  <input type="text" name="name" placeholder="name" value="<%= @tenent.name %>">
+  <input type="text" name="age" placeholder="age" value="<%= @tenent.age %>">
+  <input type="text" name="gender" placeholder="gender" value="<%= @tenent.gender %>">
+  <input type="submit" value="Update">
+</form>
